@@ -1,14 +1,8 @@
-/**
- * KALASHI ARTS — script.js
- * Features: Sticky nav, smooth scroll, gallery filter,
- * lightbox, scroll animations, AJAX form, hamburger menu
- */
+
 
 $(document).ready(function () {
 
-  /* ============================================================
-     STICKY NAVBAR
-     ============================================================ */
+  /*STICKY NAVBAR */
   $(window).on('scroll', function () {
     if ($(this).scrollTop() > 60) {
       $('#navbar').addClass('scrolled');
@@ -18,9 +12,7 @@ $(document).ready(function () {
   });
 
 
-  /* ============================================================
-     HAMBURGER MENU
-     ============================================================ */
+  /*MENU*/
   $('#hamburger').on('click', function () {
     $('#navLinks').toggleClass('open');
     $(this).toggleClass('active');
@@ -33,9 +25,7 @@ $(document).ready(function () {
   });
 
 
-  /* ============================================================
-     SMOOTH SCROLL (anchor links)
-     ============================================================ */
+  /*SMOOTH SCROLL (anchor links)*/
   $('a[href^="#"]').on('click', function (e) {
     const target = $(this.hash);
     if (target.length) {
@@ -46,9 +36,7 @@ $(document).ready(function () {
   });
 
 
-  /* ============================================================
-     SCROLL ANIMATION — product cards
-     ============================================================ */
+  /*product cards*/
   const animObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry, idx) => {
@@ -72,9 +60,7 @@ $(document).ready(function () {
   });
 
 
-  /* ============================================================
-     GALLERY FILTER
-     ============================================================ */
+  /*GALLERY FILTER*/
   $('.filter-btn').on('click', function () {
     const filter = $(this).data('filter');
 
@@ -108,9 +94,7 @@ $(document).ready(function () {
   });
 
 
-  /* ============================================================
-     LIGHTBOX
-     ============================================================ */
+  /*LIGHTBOX */
   let currentImages = [];
   let currentIndex = 0;
 
@@ -188,9 +172,7 @@ $(document).ready(function () {
   }, { passive: true });
 
 
-  /* ============================================================
-     CONTACT FORM — AJAX simulation
-     ============================================================ */
+  /*CONTACT FORM*/
   $('#contactForm').on('submit', function (e) {
     e.preventDefault();
 
@@ -246,9 +228,7 @@ $(document).ready(function () {
   });
 
 
-  /* ============================================================
-     ACTIVE NAV LINK on scroll
-     ============================================================ */
+  /*ACTIVE NAV LINK on scroll*/
   const sections = ['hero', 'about', 'products', 'gallery', 'contact'];
   $(window).on('scroll.nav', function () {
     const scrollY = $(this).scrollTop() + 100;

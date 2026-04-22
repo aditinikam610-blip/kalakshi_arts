@@ -1,19 +1,12 @@
-/* ============================================================
-   KALASHI ARTS — style.css
-   Aesthetic: Warm Indian-heritage luxury. Deep terracotta,
-   saffron gold, ivory, and ink — like a illuminated manuscript
-   meets contemporary editorial design.
-   ============================================================ */
 
-/* ---- TOKENS ---- */
 :root {
   --bg: #fdf6ee;
   --bg2: #f9ede0;
   --ink: #1a1008;
   --ink2: #3d2a18;
-  --accent: #c84b11;        /* deep terracotta */
-  --accent2: #e8973a;       /* saffron gold */
-  --accent3: #8b3a6e;       /* deep fuchsia */
+  --accent: #c84b11;       
+  --accent2: #e8973a;       
+  --accent3: #8b3a6e;       
   --light: #fff8f2;
   --border: rgba(200,75,17,0.18);
   --shadow: 0 8px 40px rgba(26,16,8,0.10);
@@ -25,7 +18,7 @@
   --nav-h: 68px;
 }
 
-/* ---- RESET ---- */
+/*RESET*/
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
@@ -44,9 +37,7 @@ ul { list-style: none; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
 
-/* ============================================================
-   BUTTONS
-   ============================================================ */
+/*BUTTONS */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -82,9 +73,7 @@ ul { list-style: none; }
 }
 .full-width { width: 100%; justify-content: center; }
 
-/* ============================================================
-   SECTION LABELS / TITLES
-   ============================================================ */
+/*SECTION LABELS / TITLES*/
 .section-label {
   font-family: var(--font-body);
   font-size: 0.78rem;
@@ -107,9 +96,7 @@ ul { list-style: none; }
   margin: 0 auto 56px;
 }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
+/*NAVBAR*/
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -191,9 +178,7 @@ ul { list-style: none; }
 }
 #navbar.scrolled .hamburger span { background: var(--ink); }
 
-/* ============================================================
-   HERO
-   ============================================================ */
+/*HERO*/
 #hero {
   position: relative;
   min-height: 100vh;
@@ -309,12 +294,7 @@ ul { list-style: none; }
   animation: scrollDot 1.6s infinite;
 }
 
-/* ============================================================
-   ABOUT
-   ============================================================ */
-/* ============================================================
-   ABOUT  — redesigned
-   ============================================================ */
+/*ABOUT  — redesigned*/
 #about {
   padding: 0;
   background: var(--bg);
